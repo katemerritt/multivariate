@@ -1,0 +1,35 @@
+---
+title: "multivariate1"
+author: "Kate Merritt"
+date: "25/06/2024"
+output: github_document
+---
+
+Sample n=239 , only those with glu data
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library("tidyverse")
+
+tissue_corr_prs_df_all2 <- read.csv(file = "c:/Users/rejuksm/Dropbox/R/alspac_iii/MRS/Dataframes/Freesurfer/glu239_thickness_vol.csv", 
+                                    na.strings = c("#NULL!", "N/A",  "NA", "-99", "-9999", "-11", "-10", "-9", "-7", "-2", "-1", "-4"))
+
+
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
